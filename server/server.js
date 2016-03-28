@@ -8,7 +8,7 @@ var Schema = mongoose.Schema;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect('mongodb://localhost/pets');
+mongoose.connect('mongodb://localhost/pet_finder');
 mongoose.model('Pets', new Schema({'name': String, 'type': String, 'age': Number, 'image': String}));
 var Pet = mongoose.model('Pets');
 

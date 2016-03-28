@@ -11,11 +11,8 @@ myApp.controller('AddController', ['$scope', 'PetService', function($scope, PetS
 myApp.controller('ViewController', ['$scope', 'PetService', function($scope, PetService){
     var petService = PetService;
 
-    $scope.data = {};
-​
-    $scope.data.response = petService.data;
-​
+    //GET HERE
     petService.getData();
-    console.log($scope.data)
+    $scope.petArray = petService.petData;
 
 }]);
