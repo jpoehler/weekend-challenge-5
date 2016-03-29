@@ -1,16 +1,19 @@
 <p>
   <form ng-submit="submit(petObject)">
     <label for="name">Pet's Name</label>
-    <input ng-model="petObject.name" type="text" id="name" />
+    <input ng-model="petObject.name" type="text" id="name" /><br /><br />
 
     <label for="name">Animal Type</label>
-    <input ng-model="petObject.type" type="text" id="type"/>
+    <input ng-model="petObject.type" type="text" id="type"/><br /><br />
 
-    <label for="name">Pet's Age</label>
-    <input ng-model="petObject.age" type="number" id="age" />
+    <label for="age">Pet's Age</label>
+    <input ng-model="petObject.age" type="number" id="age" /><br /><br />
+
+    <label for="description">Pet Fun Fact</label>
+    <input ng-model="petObject.description" type="text" id="description" /><br /><br />
 
     <label for="name">Pet's Picture</label>
-    <input ng-model="petObject.image" type="url" id="image" />
+    <input ng-model="petObject.image" type="url" id="image" /><br /><br />
 
     <input type="submit" />
   </form>

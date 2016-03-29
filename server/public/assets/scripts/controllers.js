@@ -13,6 +13,10 @@ myApp.controller('ViewController', ['$scope', 'PetService', function($scope, Pet
 
     //GET HERE
     petService.getData();
-    $scope.petArray = petService.petData;
+    $scope.info = petService.info;
+
+    $scope.showId = function(object){
+      console.log(object._id);
+    };
 
 }]);

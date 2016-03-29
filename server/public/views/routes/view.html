@@ -1,8 +1,9 @@
-  <h3>List o' Pets</h3>
-  <div class="view" ng-repeat = "object in petArray">
-      <h5>{{ object.name }}</h5>
-      <p>{{ object.type }}</p>
-      <p>{{ object.age }}</p>
-      <p>{{ object.image }}</p>
+  <h4>List o' Pets</h4>
+  <div class="view" ng-repeat="object in info.results">
+      <p>Name: {{ object.name }}</p>
+      <p>Type: {{ object.type }}</p>
+      <p>Age: {{ object.age }}</p>
+      <p>Fun fact: {{ object.description }} </p>
+      <img ng-src="{{ object.image }}" alt="description"< />
 
   </div>

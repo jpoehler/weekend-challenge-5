@@ -1,24 +1,24 @@
 myApp.factory('PetService', ['$http', function($http){
-    var petData = {};
+    var info = {};
 
     var getData = function(){
       $http.get('/pets').then(function(response){
-        console.log(response.data);
-        petData.pets = response.data;
-        console.log(petData);
-        return petData.pets;
+        info.results = response.data;
+        console.log("Here: ", info);
+
       });
     };
 
     var postData = function(data){
       $http.post('/pets', data).then(function(response){
         console.log(response.data);
+        getData();
       });
     };
 
     return {
       postData: postData,
       getData: getData,
-      petData: petData
+      info: info
     };
 }]);

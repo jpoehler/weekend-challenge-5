@@ -7,7 +7,7 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: turquoise;
 }
 
 li {
@@ -16,12 +16,49 @@ li {
 
 li a {
   display: inline-block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
+  color: white;
   background-color: #111;
+}
+
+input[type="submit"]{
+  background-color: turquoise;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+
+
+}
+
+.view {
+  margin: 10px auto 10px auto;
+  border: 2px solid #817980;
+  padding: 10px 10px 10px 10px;
+  width: 700px;
+  height: 300px;
+
+
+}
+p {
+  font-weight: bold;
+  word-wrap: normal;
+  width: 500px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  position: relative;
+  left: 500px;
+  top: -150px;
+
 }
