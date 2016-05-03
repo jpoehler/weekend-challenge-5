@@ -5,7 +5,7 @@ myApp.controller('AddController', ['$scope', 'PetService', function($scope, PetS
     //POST HERE
     $scope.submit = function(data){
       petService.postData(data);
-      window.location = '/view/';
+      window.location = '/#/view';
     };
 
 }]);
