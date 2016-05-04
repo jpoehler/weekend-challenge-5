@@ -4,11 +4,12 @@ var path = require('path');
 var bodyParser = require ('body-parser');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var mongoURI = 'mongodb://jpoehler:Luvvie0521@ds013212.mlab.com:13212/heroku_n2sjs7rv';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect('mongodb://localhost/pet_info');
+mongoose.connect(mongoURI);
 mongoose.model('Pets', new Schema({'name': String, 'type': String, 'age': Number, 'description': String, 'image': String}));
 var Pet = mongoose.model('Pets');
 
@@ -20,7 +21,7 @@ app.get('/pets', function(req, res) {
         console.log(err);
       }
 
-      res.send(data);
+      res.status(status).send(data);
     });
 });
 
@@ -33,7 +34,7 @@ app.post('/pets', function(req, res){
         console.log(err);
       }
 
-      res.send(data);
+      res.status(status).send(data);
     });
 });
 
