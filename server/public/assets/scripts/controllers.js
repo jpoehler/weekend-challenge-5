@@ -17,8 +17,8 @@ myApp.controller('ViewController', ['$scope', 'PetService', function($scope, Pet
     petService.getData();
     $scope.info = petService.info;
 
-    $scope.showId = function(object){
-      console.log(object._id);
+    $scope.remove = function(index) {
+      $scope.info.results.splice(index, 1);
     };
 
 }]);

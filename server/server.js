@@ -21,7 +21,7 @@ app.get('/pets', function(req, res) {
         console.log(err);
       }
 
-      res.status(status).send(data);
+      res.send(data);
     });
 });
 
@@ -34,7 +34,7 @@ app.post('/pets', function(req, res){
         console.log(err);
       }
 
-      res.status(status).send(data);
+      res.send(data);
     });
 });
 
