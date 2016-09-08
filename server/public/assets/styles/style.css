@@ -55,7 +55,7 @@ img {
   width: 200px;
   height: auto;
   position: relative;
-  left: 500px;
+  left: 400px;
   top: -150px;
 }
 
@@ -85,5 +85,4 @@ button {
   font-size: 12px;
   position: relative;
   float: left;
-
 }
